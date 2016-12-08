@@ -7,8 +7,8 @@ Version: MDB Free 4.2.0
 Getting started:
 http://mdbootstrap.com/getting-started/
 
-## Projeto independente ##
+<strong> Projeto independente </strong>
 
-`` Projeto realizado sem ligação com a empresa prestadora do serviço ``
+ Projeto realizado sem ligação com a empresa prestadora do serviço 
 
 
