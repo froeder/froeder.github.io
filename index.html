@@ -88,25 +88,27 @@
             <i class="fa fa-bars"></i>
         </button>
 
+        <div></div>
+
         <div class="container">
 
             <!--Collapse content-->
             <div class="collapse navbar-toggleable-xs" id="collapseEx">
                 <!--Navbar Brand-->
-                <a class="navbar-brand" href="404.html">Jhonatan Froeder</a>
+                <a class="navbar-brand" href="#">Jhonatan Froeder</a>
                 <!--Links-->
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Página Inicial <span class="sr-only">(current)</span></a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portifolio">Portifólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#dicas">Dicas</a>
@@ -128,19 +130,15 @@
     <div class="view hm-black-strong">
         <div class="full-bg-img flex-center">
             <ul>
+                <div class="offset-lg-4"><img src="img/perfil.jpg" class="img-thumbnail"></div>
                 <li>
-                    <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.05s">Business Intelligence</h1>
+                    <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.05s">Jhonatan Froeder</h1>
                 </li>
                 </p>
                 <li>
-                    <p class="wow fadeInDown">Site focado no estudo e divulgação de Business Intelligence.
-                        <p class="wow fadeInDown"> Não sabe por onde começar? </p>
-
-                        <p class="wow fadeInDown">Leia os artigos a seguir:</p>
-                </li>
-                <li>
-                    <a target="_blank" href="404.html" class="btn btn-primary btn-lg wow fadeInLeft disabled" data-wow-delay="0.2s">O que é BI??</a>
-                    <a target="_blank" href="404.html" class="btn btn-default btn-lg wow fadeInRight disabled" data-wow-delay="0.2s">Porque aprender BI ?</a>
+                    <p class="wow fadeInDown">
+                        <i>Entusiasta do software livre, amante da tecnologia. </i>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -155,15 +153,17 @@
         </div>
 
         <!--Section: About-->
-        <section id="sobre" class="text-xs-center wow bounceIn" data-wow-delay="0.2s">
+        <div id="sobre">
+            <section class="text-xs-center wow bounceIn" data-wow-delay="0.2s">
 
-            <p> ** Estudante de <strong>Sistemas da Informação</strong> pela <strong>UFMS/CPPP</strong> **</p>
-            <p> ** Desenvolvedor durante 6 meses na BovBI <br> - empresa focada no desenvolvimento de <strong>Business Intelligence</strong> para o <strong>Agronegócio.</strong> **</p>
-            <p> ** Site criado como projeto pessoal com o objetivo de divulgar o B.I. . ** </p>
+                <p> ** Estudante de <strong>Sistemas da Informação</strong> pela <strong>UFMS/CPPP</strong> **</p>
+                <p> ** Desenvolvedor durante 6 meses na BovBI <br> - empresa focada no desenvolvimento de <strong>Business Intelligence</strong> para o <strong>Agronegócio.</strong> **</p>
+                <p> ** Site criado como projeto pessoal com o objetivo de divulgar o B.I. . ** </p>
 
 
 
-        </section>
+            </section>
+        </div>
         <!--Section: About-->
 
         <div class="divider-new" id="portifolio">
@@ -456,12 +456,13 @@
 
         </section>
 
-        <div id="dicas" class="divider-new">
-            <h2 class="h2-responsive wow fadeInDown">Últimos posts adicionados:</h2>
-        </div>
+
 
         <!--Section: Best features-->
-        <section>
+        <section id="dicas">
+            <div class="divider-new">
+                <h2 class="h2-responsive wow fadeInDown">Últimos posts adicionados:</h2>
+            </div>
 
             <div class="row">
 
@@ -593,7 +594,7 @@
         </div>
 
         <!--Section: Contact-->
-        <section>
+        <section id="contato">
             <div class="row ">
                 <!--First column-->
                 <div class="col-md-6 ">
