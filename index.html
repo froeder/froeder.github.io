@@ -156,9 +156,7 @@
         <div id="sobre">
             <section class="text-xs-center wow bounceIn" data-wow-delay="0.2s">
 
-                <p> ** Estudante de <strong>Sistemas da Informação</strong> pela <strong>UFMS/CPPP</strong> **</p>
-                <p> ** Desenvolvedor durante 6 meses na BovBI <br> - empresa focada no desenvolvimento de <strong>Business Intelligence</strong> para o <strong>Agronegócio.</strong> **</p>
-                <p> ** Site criado como projeto pessoal com o objetivo de divulgar o B.I. . ** </p>
+                <p></p>
 
 
 
@@ -658,7 +656,7 @@
         <!--Copyright-->
         <div class="footer-copyright ">
             <div class="container-fluid ">
-                © 2016 Copyright: <a href="404.html "> Jhonatan Froeder </a>
+                © <span id="ano_copyright"></span> Copyright: <a href="404.html "> Jhonatan Froeder </a>
 
             </div>
         </div>
@@ -717,6 +715,15 @@
         new WOW().init();
     </script>
 
+    <script>
+        window.onload = function() {
+            var mydate = new Date();
+            var year = mydate.getYear();
+            if (year < 1000);
+            year += 1900;
+            $('#ano_copyright').html(year);
+        }
+    </script>
 
 </body>
 
