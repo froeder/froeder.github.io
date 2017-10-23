@@ -21,6 +21,9 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
+    <!-- DevIcons -->
+    <link href="css/devicons.min.css" rel="stylesheet">
+
     <!-- Template styles -->
     <style>
         /* TEMPLATE STYLES */
@@ -151,7 +154,7 @@
     <div class="container">
 
         <div class="divider-new" id="sobre">
-            <h2 class="h2-responsive wow bounceIn">Sobre:</h2>
+            <h2 class="h2-responsive wow bounceIn">Sobre mim:</h2>
         </div>
 
         <!--Section: About-->
@@ -164,14 +167,65 @@
                     <br>
                 </p>
                 <p>
-                    <b>Habilidades </b><br> Programação WEB HTML/CSS , JavaScript e PHP ;
+                    <br>
+                    <h5 style="font-weight:bold"><strong>Habilidades</strong></h5> <br> Programação WEB HTML/CSS , JavaScript e PHP ;
                     <br> Business Intelligence: Uso da suíte <b>Pentaho Comunity Edition</b> ,conceito de DataWarehouse, processos de ETL e criação de dashboards personalizados ;
                     <br> Programação mobile: Android Studio e Intel SDK .
 
+                    <br>
+                    <br>
+                    <br>
+                    <h5 style="font-weight:bold"><strong>Ferramentas que utilizo:</strong></h5>
+                    <div class="row">
+                        <i style="font-size:49px" class="devicons devicons-git" data-toggle="tooltip" data-placement="bottom" title="Git"></i>
+                        <i style="font-size:49px" class="devicons devicons-github_badge" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
+                        <i style="font-size:49px" class="devicons devicons-bitbucket" data-toggle="tooltip" data-placement="bottom" title="Bitbucket"></i>
+                        <i style="font-size:49px" class="devicons devicons-trello" data-toggle="tooltip" data-placement="bottom" title="Trello"></i>
+                        <i style="font-size:49px" class="devicons devicons-bootstrap" data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                    </div>
+                    <br>
+
+                    <h5 style="font-weight:bold"><strong>Linguagens e frameworks:</strong> </h5>
+                    <div class="row">
+                        <i style="font-size:49px" class="devicons devicons-css3" data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
+                        <i style="font-size:49px" class="devicons devicons-html5" data-toggle="tooltip" data-placement="bottom" title="HTML5"></i>
+                        <i style="font-size:49px" class="devicons devicons-markdown" data-toggle="tooltip" data-placement="bottom" title="Markdown"></i>
+                        <i style="font-size:49px" class="devicons devicons-php" data-toggle="tooltip" data-placement="bottom" title="php"></i>
+                        <i style="font-size:49px" class="devicons devicons-javascript" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></i>
+                        <i style="font-size:49px" class="devicons devicons-jquery" data-toggle="tooltip" data-placement="bottom" title="jQuery"></i>
+                        <i style="font-size:49px" class="devicons devicons-ionic" data-toggle="tooltip" data-placement="bottom" title="Ionic"></i>
+                    </div>
+                    <br>
+
+                    <h5 style="font-weight:bold"><strong>Banco de dados:</strong> </h5>
+                    <div class="row">
+                        <i style="font-size:49px" class="devicons devicons-mysql" data-toggle="tooltip" data-placement="bottom" title="MySQL"></i>
+                        <i style="font-size:49px" class="devicons devicons-postgresql" data-toggle="tooltip" data-placement="bottom" title="PostgreSQL"></i>
+                    </div>
+                    <br>
+
+                    <h5 style="font-weight:bold"><strong>IDE's:</strong> </h5>
+                    <div class="row">
+                        <i style="font-size:49px" class="devicons devicons-visualstudio" data-toggle="tooltip" data-placement="bottom" title="Visual Studio Code"></i>
+                        <i style="font-size:49px" class="devicons devicons-atom" data-toggle="tooltip" data-placement="bottom" title="Atom"></i>
+                    </div>
+                    <br>
+
+                    <h5 style="font-weight:bold"><strong>Sistemas Operacionais:</strong> </h5>
+                    <div class="row">
+                        <i style="font-size:49px" class="devicons devicons-linux" data-toggle="tooltip" data-placement="bottom" title="Linux"></i>
+                        <i style="font-size:49px" class="devicons devicons-ubuntu" data-toggle="tooltip" data-placement="bottom" title="Ubuntu"></i>
+                        <i style="font-size:49px" class="devicons devicons-debian" data-toggle="tooltip" data-placement="bottom" title="Debian"></i>
+                        <i style="font-size:49px" class="devicons devicons-android" data-toggle="tooltip" data-placement="bottom" title="Android"></i>
+                    </div>
+                    <br>
+
+                    <h5 style="font-weight:bold"><strong>Outros:</strong> </h5>
+                    <div class="row">
+                        <i style="font-size:49px" class="devicons devicons-terminal" data-toggle="tooltip" data-placement="bottom" title="Terminal"></i>
+                    </div>
+
                 </p>
-
-
-
             </section>
         </div>
         <!--Section: About-->
@@ -752,6 +806,12 @@
                 }, 'slow');
             });
         }
+    </script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
     </script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
