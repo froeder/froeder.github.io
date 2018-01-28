@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RATSP - Radar de Acidentes de Trânsito de São Paulo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript">
+        function teste() {
+            var span = document.getElementById("homenagem");
+
+            var teste = [];
+            span.innerHTML = Array(5645).join("&#10013 ");
+        }
+    </script>
+
+</head>
+
+
+
+<body onload="teste()">
+
+    <nav style="background-color:#FFD942;box-shadow:1px 1px 5px black" class="navbar navbar-expand-lg fixed-top navbar-light">
+        <a class="navbar-brand" href="#">RATSP</a>
+        <div class="text-right">
+            <ul class="navbar-nav pull-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- INICIO HEADER -->
+    <section style="padding-top:250px;padding-bottom:250px;background-color:rgb(92, 92, 92)">
+        <div class="container">
+            <h5 class="" style="text-shadow:0px 0px 4px black">Infosiga SP</h5>
+            <p class="" style="text-shadow:0px 0px 1px black">Banco de dados com informações de acidentes de trânsito do Estado de São Paulo. A atualização é mensal, com informações de acidentes de trânsito do Estado de São Paulo, incluindo seus 645 municípios, com dados sobre perfil do acidente, da
+                vítima e localização geográfica.</p>
+            <p>
+                <a style="color:white" href="http://catalogo.governoaberto.sp.gov.br/dataset/infosiga-sp-sistema-de-informacoes-gerenciais-de-acidentes-de-transito-do-estado-de-sao-paulo">Acessar</a> </p>
+        </div>
+    </section>
+    <!-- FIM HEADER -->
+
+    <section style="padding-top:250px;padding-bottom:250px;background-color:rgb(0, 0, 0)">
+        <h7 class="text-center">
+            <div class="container">
+                <h5>Um pequeno tributo à todas as 5645 vítimas. </h5>
+                <br><br><br><br>
+                <p id="homenagem">
+
+                </p>
+            </div>
+        </h7>
+    </section>
+
+
+
+    <footer class="">
+        <div class="container">
+            <p class="text-right" style="color:white;text-shadow:0px 0px 1px black">Jhonatan Froeder - <a target: "_blank" href="http://www.facebook.com/jfroeder">Facebook</a> , <a href="http://www.github.com/froeder">GitHub</a> , WhatsApp: 18 991560865</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="js/Chart.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/plugin/src/index.js"></script>
+<script src="js/plugin.js"></script>
+<script src="js/datalabel/chartjs-plugin-datalabels.js"></script>
+
+
+
+
+</html>

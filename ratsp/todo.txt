@@ -1,0 +1,14 @@
+Incluir 5465 cruzes, uma para cada vitima fatal ;
+Incluir comentario sobre aumento no fim de semana ;
+incluir minhas redes sociais no rodapé;
+incluir menu de navegação e efeito JS de transição ;
+criar layout parece asflato, preto com faixas brancas/ amarelas
+incluir plugin zoom
+alterar charts de sacionalidade para line
+
+
+
+
+
+
+site com estados e cidades que ja visitei
