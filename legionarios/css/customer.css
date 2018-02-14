@@ -1,0 +1,46 @@
+#paineis-sobre {
+	margin-top: 0px;
+}
+
+.container-menor{margin-left: 20px;margin-right: 20px }
+.margem{margin-top: 10px}
+
+
+html,
+body {
+	height: 100%;
+}
+
+header {
+	background-image: url(../img/castelo.jpg);
+	background-size: cover;
+	background-position: top center;
+	height: 100%;
+}
+
+header h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.negrito{font-weight: bold}
+
+footer {
+	background-color: #333;
+	color: #FFF;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+footer address:last-child {
+	margin-bottom: 0;
+}
+
+@media(min-width: 768px) {
+
+}
+
+@media(min-width: 992px) {
+
+}
