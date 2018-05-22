@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RATSP - Radar de Acidentes de Trânsito de São Paulo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="js/aos/aos.css">
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+body {
+    background-color: #FFD942;
+    color: white
+}
+
+.text-center {
+    text-align: center
+}
+
+.texto {
+    font-size: 20px
+}
+
+.subtitulo {
+    font-size: 18px
+}
+    </style>
+
+</head>
+
+<body>
+
+    <nav style="background-color:#FFD942; box-shadow:1px 1px 5px black" class="navbar navbar-expand-lg fixed-top navbar-light">
+        <a class="navbar-brand" href="#">RATSP</a>
+        <button class="navbar-toggler" type="button" data-target="#navbarSuport">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" navbar-collapse" id="navbarSuport">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="animacao1" href="#tempo">Tempo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animacao2" href="#genero">Gênero</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animacao3" href="#idade">Idade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animacao4" href="#tipo">Tipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animacao5" href="#localizacao">Localização</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- INICIO HEADER -->
+    <section style="padding-top:250px;padding-bottom:250px" id="inicio">
+        <h1 class="text-center" style="text-shadow:0px 0px 4px black">RADAR DE ACIDENTES DE TRÂNSITO NO ESTADO DE SÃO PAULO</h1>
+        <p class="text-center" style="text-shadow:0px 0px 1px black">2017</p>
+    </section>
+    <!-- FIM HEADER -->
+
+    <section style="background-color:black ; box-shadow: 0px 0px 5px black ; padding:200px">
+        <div class="container">
+            <div class="texto text-center">
+                <p>No ano de 2017, de acordo com a Infosiga SP ocorreram <strong>5645</strong> acidentes de trânsitos com vítimas fatais, nas ruas, avenidas e rodovias do estado de São Paulo, destes, <strong>1658</strong> foram atropelamentos e <strong>2092</strong>                    colisões.</p>
+                <p>Este site tem como objetivo tentar concientizar a população sobre os perigos no trânsito, por meio de gráficos interativos construídos a partir da base de dados que é fornecida mensalmente pela Infosiga SP.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tempo" class="aos-item" data-aos="fade-up" style="background-color:white ;color:black; box-shadow: 0px 0px 5px black ; padding-top:100px ; padding-bottom:100px">
+        <h3 class="text-center">MÊS, DIA E TURNO DOS ACIDENTES</h3>
+        <p class="text-center subtitulo">Nesta primeira seção, é apresentada a quantidade de acidentes ocorridos por cada mês, dia e turno.</p>
+        <!-- MÊS -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Quantidade de acidentes ocorridos por mês</h5>
+                <canvas id="qtde_mes"></canvas>
+            </div>
+        </div>
+        <!-- FIM MÊS -->
+
+        <!-- DIA -->
+        <div div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Quantidade de acidentes ocorridos por dia da semana</h5>
+                <canvas id="qtde_dia"></canvas>
+            </div>
+        </div>
+        <!-- FIM DIA -->
+
+        <!-- MÊS/DIA -->
+        <div div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Quantidade de acidentes ocorridos por mês e dia da semana</h5>
+                <canvas id="qtde_mes_dia"></canvas>
+            </div>
+        </div>
+        <!-- FIM MÊS/DIA -->
+
+        <!-- TURNO -->
+        <div div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Quantidade de acidentes ocorridos por turno no ano</h5>
+                <canvas id="qtde_turno"></canvas>
+            </div>
+        </div>
+        <!-- FIM TURNO-->
+
+        <!-- TURNO MêS -->
+        <div div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Quantidade de acidentes ocorridos por turno e mês</h5>
+                <canvas id="qtde_turno_mes"></canvas>
+            </div>
+        </div>
+        <!-- FIM TURNO MÊS-->
+
+    </section>
+
+    <section id="genero" class="aos-item" data-aos="fade-up" style="background-color:rgb(233, 233, 233) ;color:black; box-shadow: 0px 0px 5px black ; padding-top:100px ; padding-bottom:100px">
+        <h3 class="text-center">GÊNERO DAS VITÍMAS DOS ACIDENTES</h3>
+        <p class="text-center subtitulo">Nesta seção é apresentado o gênero das vítimas acidentes.</p>
+        <!-- GERAL -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Gênero</h5>
+                <canvas id="qtde_genero"></canvas>
+            </div>
+        </div>
+        <!-- FIM GERAL -->
+
+        <!-- GENERO MES -->
+        <div class="col-md-12" style="padding-top:100px">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-center">Gênero Masculino por mês</h5>
+                    <canvas id="qtde_genero_mes_masc"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-center">Gênero Feminino por mês</h5>
+                    <canvas id="qtde_genero_mes_fem"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- FIM GENERO MES -->
+
+        <!-- GENERO DIA -->
+        <div class="col-md-12" style="padding-top:100px">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-center">Gênero Masculino por dia</h5>
+                    <canvas id="qtde_genero_masc_dia"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-center">Gênero Feminino por dia</h5>
+                    <canvas id="qtde_genero_fem_dia"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- FIM GENERO DIA -->
+
+        <!-- GENERO TURNO -->
+        <div class="col-md-12" style="padding-top:100px">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-center">Gênero Masculino por turno</h5>
+                    <canvas id="qtde_genero_turno_masc"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-center">Gênero Feminino por turno</h5>
+                    <canvas id="qtde_genero_turno_fem"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- FIM GENERO TURNO -->
+
+    </section>
+
+    <section id="idade" class="aos-item" data-aos="fade-up" style="background-color:#FFD942 ;color:black; box-shadow: 0px 0px 5px black ; padding-top:100px ; padding-bottom:100px">
+        <h3 class="text-center">IDADE E FAIXA ETÁRIA DAS VITÍMAS DOS ACIDENTES</h3>
+        <p class="text-center subtitulo">Nesta seção é apresentada a idade e a faixa etária das vítimas dos acidentes.</p>
+        <!-- FAIXA ETARIA -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Faixa Etária</h5>
+                <canvas id="qtde_faixa_etaria"></canvas>
+            </div>
+        </div>
+        <!-- FIM FEIXA ETARIA -->
+
+        <!-- FAIXA ETARIA DIA SEMANA-->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Faixa Etária por dia da semana </h5>
+                <canvas id="qtde_faixa_etaria_dia"></canvas>
+            </div>
+        </div>
+        <!-- FIM FEIXA ETARIA DIA SEMANA-->
+
+        <!-- FAIXA ETARIA DIA TURNO-->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Faixa Etária por turno </h5>
+                <canvas id="qtde_faixa_etaria_turno"></canvas>
+            </div>
+        </div>
+        <!-- FIM FEIXA ETARIA TURNO-->
+
+        <!-- FAIXA ETARIA GENERO-->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Faixa Etária por gênero</h5>
+                <canvas id="qtde_faixa_etaria_masc"></canvas>
+            </div>
+        </div>
+        <!-- FIM FEIXA ETARIA GENERO-->
+
+    </section>
+
+    <section id="tipo" class="aos-item" data-aos="fade-up" style="background-color:rgb(255, 255, 255) ;color:rgb(0, 0, 0); box-shadow: 0px 0px 5px black ; padding-top:100px ; padding-bottom:100px">
+        <h3 class="text-center">DETALHES DOS ACIDENTES</h3>
+        <p class="text-center subtitulo">Detalhes como tipo do veículo, tipo da vítima e tipo de via dos acidentes.</p>
+
+        <!-- TIPO ACIDENTE-->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Tipo de acidente</h5>
+                <canvas id="qtde_tipo_acidente"></canvas>
+            </div>
+        </div>
+        <!-- FIM TIPO ACIDENTE -->
+
+        <!-- TIPO VEICULO -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Tipo de veículo</h5>
+                <canvas id="qtde_tipo_veiculo"></canvas>
+            </div>
+        </div>
+        <!-- FIM TIPO VEICULO -->
+
+        <!-- TIPO VITIMA -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Tipo de vítima</h5>
+                <canvas id="qtde_tipo_vitima"></canvas>
+            </div>
+        </div>
+        <!-- FIM TIPO VITIMA -->
+
+        <!-- TIPO ACIDENTE VITIMA -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Tipo de acidente por vítima</h5>
+                <canvas id="qtde_tipo_acidente_vitima"></canvas>
+            </div>
+        </div>
+        <!-- FIM TIPO ACIDENTE VITIMA-->
+
+        <!-- TIPO ACIDENTE VEICULO -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Tipo de acidente por veículo</h5>
+                <canvas id="qtde_tipo_acidente_veiculo"></canvas>
+            </div>
+        </div>
+        <!-- FIM TIPO ACIDENTE VEICULO-->
+
+        <!-- TIPO VITIMA GENERO -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Tipo de vítima por gênero</h5>
+                <canvas id="qtde_tipo_vitima_genero"></canvas>
+            </div>
+        </div>
+        <!-- FIM TIPO VITIMA GENERO-->
+
+        <!-- TIPO VIA -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Tipo de via</h5>
+                <canvas id="qtde_tipo_via"></canvas>
+            </div>
+        </div>
+        <!-- FIM TIPO VIA-->
+
+        <!-- TIPO ACIDENTE VIA -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Tipo de acidente por via</h5>
+                <canvas id="qtde_tipo_acidente_via"></canvas>
+            </div>
+        </div>
+        <!-- FIM TIPO ACIDENTE VIA-->
+
+    </section>
+
+    <section id="localizacao" class="aos-item" data-aos="fade-up" style="background-color:rgb(243, 243, 243) ;color:rgb(0, 0, 0); box-shadow: 0px 0px 5px black ; padding-top:100px ; padding-bottom:100px">
+        <h3 class="text-center">LOCALIZAÇÃO DOS ACIDENTES</h3>
+        <p class="text-center subtitulo">Nesta última seção, temos os dados sobre a localização dos acidentes.</p>
+        <!-- CIDADES -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Cidades dos acidentes</h5>
+                <canvas id="qtde_cidade"></canvas>
+            </div>
+        </div>
+        <!-- FIM CIDADES-->
+
+        <!-- REGIAO -->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Regiões dos acidentes</h5>
+                <canvas id="qtde_regiao"></canvas>
+            </div>
+        </div>
+        <!-- FIM REGIAO-->
+
+        <!-- REGIAO POR TIPO ACIDENTE-->
+        <div class="col-md-12" style="padding-top:80px">
+            <div class="container">
+                <h5 class="text-center">Regiões por tipo dos acidentes</h5>
+                <canvas id="qtde_regiao_tipo_acidente"></canvas>
+            </div>
+        </div>
+        <!-- FIM REGIAO POR TIPO ACIDENTE -->
+
+    </section>
+
+    <section class="text-center" class="aos-item" data-aos="fade-up" style="background-color:black ; box-shadow: 0px 0px 5px black ; padding:200px">
+        <h3>Conclusão</h3>
+        <p style="padding-top:50px">Esse projeto foi feito com a finalidade de alertar por meio dos dados, que o trânsito pode ser perigoso.</p>
+        <p>Por isso dirija com cuidado sempre, tenha certeza ao atravessar a rua, não faça manobras perigosas, dirija pela sua vida e pela dos outros.</p>
+    </section>
+
+    <footer class="">
+        
+    </footer>
+
+</body>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/jquery.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/aos/aos.js"></script>
+<script src="js/plugin/src/index.js"></script>
+<script src="js/datalabel/chartjs-plugin-datalabels.js"></script>
+<script src="js/chartjs-plugin-deferred.js"></script>
+
+
+<script src="js/qtde_mes.js"></script>
+<script src="js/qtde_dia.js"></script>
+<script src="js/qtde_mes_dia.js"></script>
+<script src="js/qtde_turno.js"></script>
+<script src="js/qtde_turno_mes.js"></script>
+<script src="js/qtde_genero.js"></script>
+<script src="js/qtde_genero_mes_masc.js"></script>
+<script src="js/qtde_genero_mes_fem.js"></script>
+<script src="js/qtde_genero_masc_dia.js"></script>
+<script src="js/qtde_genero_fem_dia.js"></script>
+<script src="js/qtde_genero_turno_fem.js"></script>
+<script src="js/qtde_genero_turno_masc.js"></script>
+<script src="js/qtde_faixa_etaria.js"></script>
+<script src="js/qtde_faixa_etaria_masc.js"></script>
+<script src="js/qtde_faixa_etaria_dia.js"></script>
+<script src="js/qtde_faixa_etaria_turno.js"></script>
+<script src="js/qtde_tipo_acidente.js"></script>
+<script src="js/qtde_tipo_veiculo.js"></script>
+<script src="js/qtde_tipo_vitima.js"></script>
+<script src="js/qtde_tipo_acidente_vitima.js"></script>
+<script src="js/qtde_tipo_acidente_veiculo.js"></script>
+<script src="js/qtde_tipo_vitima_genero.js"></script>
+<script src="js/qtde_tipo_via.js"></script>
+<script src="js/qtde_tipo_acidente_via.js"></script>
+<script src="js/qtde_cidade.js"></script>
+<script src="js/qtde_regiao.js"></script>
+<script src="js/qtde_regiao_tipo_acidente.js"></script>
+
+
+<script>
+    AOS.init({
+        offset: 100,
+        duration: 300,
+        easing: 'ease-in-sine',
+        delay: 50,
+    });
+</script>
+
+
+</html>
