@@ -1,1 +1,5 @@
-teste
+TODO:
+
+COLOCAR MONGOOSE, WINDOWS, SISTEMAS EM PHP 
+
+incluir nos projeto o MVP
