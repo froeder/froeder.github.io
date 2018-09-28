@@ -3,8 +3,6 @@
     <q-layout-header>
       <q-toolbar
         color="primary"
-        :glossy="$q.theme === 'mat'"
-        :inverted="$q.theme === 'ios'"
       >
         <q-btn
           flat
@@ -17,7 +15,7 @@
         </q-btn>
 
         <q-toolbar-title>
-          Quasar App
+          Jhonatan Froeder
           <div slot="subtitle">Running on Quasar v{{ $q.version }}</div>
         </q-toolbar-title>
       </q-toolbar>
@@ -32,26 +30,34 @@
         link
         inset-delimiter
       >
-        <q-list-header>Essential Links</q-list-header>
+        <q-list-header>Menu</q-list-header>
         <q-item @click.native="openURL('http://quasar-framework.org')">
-          <q-item-side icon="school" />
-          <q-item-main label="Docs" sublabel="quasar-framework.org" />
+          <q-item-side icon="home" />
+          <q-item-main label="Home"/>
+        </q-item>
+        <q-item @click.native="openURL('https://discord.gg/5TDhbDg')">
+          <q-item-side icon="class" />
+          <q-item-main label="Portfólio"/>
+        </q-item>
+        <q-item @click.native="openURL('http://forum.quasar-framework.org')">
+          <q-item-side icon="all_inbox" />
+          <q-item-main label="Projetos"/>
+        </q-item>
+        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
+          <q-item-side icon="rate_review" />
+          <q-item-main label="Blog"/>
+        </q-item>
+        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
+          <q-item-side icon="question_answer" />
+          <q-item-main label="Artigos"/>
+        </q-item>
+        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
+          <q-item-side icon="account_box" />
+          <q-item-main label="Sobre" />
         </q-item>
         <q-item @click.native="openURL('https://github.com/quasarframework/')">
           <q-item-side icon="code" />
-          <q-item-main label="GitHub" sublabel="github.com/quasarframework" />
-        </q-item>
-        <q-item @click.native="openURL('https://discord.gg/5TDhbDg')">
-          <q-item-side icon="chat" />
-          <q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg" />
-        </q-item>
-        <q-item @click.native="openURL('http://forum.quasar-framework.org')">
-          <q-item-side icon="record_voice_over" />
-          <q-item-main label="Forum" sublabel="forum.quasar-framework.org" />
-        </q-item>
-        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Twitter" sublabel="@quasarframework" />
+          <q-item-main label="GitHub"/>
         </q-item>
       </q-list>
     </q-layout-drawer>
@@ -59,6 +65,13 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-layout-footer
+      style="background-color:#027be3 ; color: white ; padding-right:2px ;height:1.5em"
+      class="text-right"
+    >
+      Made with <q-icon color="red" name="favorite"></q-icon>  from <img src="../assets/brazil-flag.png" alt="">
+    </q-layout-footer>
   </q-layout>
 </template>
 

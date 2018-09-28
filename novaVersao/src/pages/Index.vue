@@ -1,14 +1,37 @@
 <template>
-  <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+  <q-page padding>
+    <p class="header">Sobre Mim</p>
+    <SobreMim/>
+    <br>
+    <p class="header">Skills</p>
+    <Skills/>
   </q-page>
 </template>
 
-<style>
-</style>
-
 <script>
+import Skills from '../components/Skills.vue'
+import SobreMim from '../components/SobreMim.vue'
+
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components:{
+    SobreMim,
+    Skills
+  },
+  data(){
+    return{
+
+    }
+  }
 }
 </script>
+
+<style>
+  .q-card{
+    border-radius:10px ;
+  }
+  .header{
+    font-size:1.5em
+  }
+</style>
+
