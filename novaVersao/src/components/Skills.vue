@@ -1,11 +1,11 @@
 <template>
-    <q-card>
+    <q-card style="font-size:1em">
       <q-card-main>
         HTML
         <q-progress
           color="orange"
           :percentage="100"
-          style="height: 10px"          
+          style="height: 10px"       
         />
         <br>
         CSS
