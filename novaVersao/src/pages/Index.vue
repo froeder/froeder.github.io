@@ -1,13 +1,19 @@
 <template>
-  <q-page padding>
-    <h3>Olá! Obrigado pela visita!  <q-icon color="warning" name="sentiment_satisfied_alt"></q-icon> </h3>
+  <q-page style="padding-left:2em ; padding-bottom: 2em ; padding-right:2em ">
+    <h4 class="q-headline">Olá! Obrigado pela visita!  <q-icon color="warning" name="sentiment_satisfied_alt"></q-icon> </h4>
+    <div class="row">
+      <q-btn outline class="col-xs-12" @click="rota('portifolio')">
+        VEJA MEU PORTIFÓLIO 
+        <q-icon color="red" name="favorites"></q-icon> 
+      </q-btn>
+    </div>
     <p class="header">Sobre Mim</p>
     <SobreMim />
     <br>
-    <p class="header">Skills</p>
+    <p class="header">Skills <small style="font-size:7px">(é verdade esse bilete)</small></p>
     <Skills/>
     <br>
-    <p>Stack de Ferramentas</p>
+    <p>Stack de Ferramentas que utilizo</p>
     <Stack/>
 
   </q-page>
@@ -17,6 +23,8 @@
 import Skills from '../components/Skills.vue'
 import SobreMim from '../components/SobreMim.vue'
 import Stack from '../components/Stack.vue'
+
+import {Notify} from 'quasar'
 
 export default {
   name: 'PageIndex',
@@ -28,6 +36,11 @@ export default {
   data(){
     return{
 
+    }
+  },
+  methods:{
+    rota(name){
+      this.$router.push({name: name})
     }
   }
 }

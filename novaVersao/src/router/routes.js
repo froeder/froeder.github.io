@@ -1,10 +1,15 @@
+import Default from 'layouts/MyLayout.vue'
+import Index from 'pages/Index.vue'
+import Portifolio from 'pages/Portifolio.vue'
+import Error from 'pages/Error404.vue'
 
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MyLayout.vue'),
+    component: Default,
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: Index },
+      { path: '/portifolio', component: Portifolio , name: 'portifolio'}
     ]
   }
 ]
@@ -13,7 +18,7 @@ const routes = [
 if (process.env.MODE !== 'ssr') {
   routes.push({
     path: '*',
-    component: () => import('pages/Error404.vue')
+    component: Error
   })
 }
 
