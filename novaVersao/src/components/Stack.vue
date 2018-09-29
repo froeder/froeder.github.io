@@ -40,11 +40,16 @@
             <q-card-separator/>
                 <div class="row">
                     <p class="header col-xs-12">Sistemas Operacionais</p>
-                    <i class="devicon-linux-plain colored icone"><q-tooltip></q-tooltip></i>
-                    <i class="devicon-ubuntu-plain colored icone"><q-tooltip></q-tooltip></i>
-                    <i class="devicon-debian-plain colored icone"><q-tooltip></q-tooltip></i>
-                    <i class="devicon-android-plain colored icone"><q-tooltip></q-tooltip></i>
-                    <i class="devicon-windows8-plain colored icone"><q-tooltip></q-tooltip></i>
+                    <i class="devicon-linux-plain colored icone"><q-tooltip>Linux: Core de Sistemas Operacionais</q-tooltip></i>
+                    <i class="devicon-ubuntu-plain colored icone"><q-tooltip>Ubuntu: Sitema Operacional que usa o Linux, é baseado em Debian</q-tooltip></i>
+                    <i class="devicon-debian-plain colored icone"><q-tooltip>Debian: Sistema Operacional que usa o Linux.</q-tooltip></i>
+                    <i class="devicon-android-plain colored icone"><q-tooltip>Android: Sistema Operacional móvel.</q-tooltip></i>
+                    <i class="devicon-windows8-plain colored icone"><q-tooltip>Windows: Sistema Operacional da Micro$oft</q-tooltip></i>
+                </div>
+            <q-card-separator/>
+                <div class="row">
+                    <p class="header col-xs-12">Outras Ferramentas</p>
+
                 </div>
 
         </q-card-main>
