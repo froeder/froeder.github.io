@@ -22,7 +22,10 @@ function drawRegionsMap() {
 
     ]);
 
-    var options = {};
+    var options = {
+        backgroundColor: '#b7f2f5',
+        colorAxis: {colors: ['#7FA56C', '#e31b23']},
+    };
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
