@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Excluir Conta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Excluir Conta</h2>
+        <p>Entre com o seu e-mail para excluir sua conta:</p>
+        <input type="email" id="email" placeholder="seuemail@example.com">
+        <button id="excluir">Excluir Conta</button>
+        <p id="alerta"></p>
+    </div>
+
+    <script>
+        const excluirBtn = document.getElementById('excluir');
+        const emailInput = document.getElementById('email');
+        const alerta = document.getElementById('alerta');
+
+        excluirBtn.addEventListener('click', () => {
+            if (emailInput.value.trim() !== '') {
+                alerta.textContent = 'A conta será excluída em 7 dias.';
+
+            } else {
+                alerta.textContent = 'Por favor, insira um e-mail válido.';
+                setTimeout(() => {
+                    alerta.textContent = '';
+                }, 3 * 1000); // Limpa o alerta após 3 segundos
+            }
+        });
+    </script>
+</body>
+
+</html>
