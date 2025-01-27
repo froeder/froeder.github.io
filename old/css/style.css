@@ -1,1 +1,6 @@
 /* YOUR CUSTOM STYLES */
+
+.img-half {
+    width: 50%;
+    height: auto;
+}

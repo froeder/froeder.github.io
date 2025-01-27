@@ -1273,3 +1273,8 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.img-half {
+  width: 30%;
+  height: auto;
+}
