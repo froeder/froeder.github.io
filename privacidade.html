@@ -2,69 +2,697 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Uso</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Política de Privacidade e Termos de Uso | Frojho's Soluções Móveis</title>
+  <meta content="Política de Privacidade oficial dos aplicativos e serviços desenvolvidos por Frojho's Soluções Móveis (Jhonatan Froeder), em conformidade com a LGPD e Google Play Developer Policies." name="description">
+  <meta content="política de privacidade, termos de uso, LGPD, proteção de dados, privacidade aplicativos, Frojho's Soluções Móveis, Jhonatan Froeder, Google Play" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Styles for Privacy Policy -->
+  <style>
+    .privacy-header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #149ddd;
+      background: rgba(20, 157, 221, 0.1);
+      border: 1px solid rgba(20, 157, 221, 0.25);
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+
+    .policy-card {
+      background: #ffffff;
+      border: 1px solid #e9ecef;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .policy-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    }
+
+    .policy-card-title {
+      font-family: var(--heading-font, "Raleway", sans-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #050d18;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f4f8;
+    }
+
+    .policy-card-title .icon-holder {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(20, 157, 221, 0.12);
+      color: #149ddd;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .policy-card-title .badge-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: #149ddd;
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 20px;
+      margin-left: auto;
+    }
+
+    .toc-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 24px;
+    }
+
+    .toc-card {
+      background: #ffffff;
+      border: 1px solid #e9ecef;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .toc-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc-nav li {
+      margin-bottom: 6px;
+    }
+
+    .toc-nav a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: #495057;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .toc-nav a:hover {
+      background: rgba(20, 157, 221, 0.08);
+      color: #149ddd;
+      transform: translateX(4px);
+    }
+
+    .toc-nav a i {
+      font-size: 0.95rem;
+      color: #149ddd;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #f8fbfe 0%, #eef6fd 100%);
+      border-left: 4px solid #149ddd;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .highlight-box.warning {
+      background: #fff9e6;
+      border-left-color: #ffc107;
+    }
+
+    .highlight-box.success {
+      background: #f0fdf4;
+      border-left-color: #198754;
+    }
+
+    .entity-badge {
+      display: inline-block;
+      background: #e7f3fc;
+      color: #0c5460;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .custom-check-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 12px;
+    }
+
+    .custom-check-list li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 10px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .custom-check-list li i {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      color: #198754;
+      font-size: 1.1rem;
+    }
+
+    .action-banner {
+      background: linear-gradient(135deg, #050d18 0%, #142850 100%);
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 16px;
+    }
+
+    .action-banner h4 {
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .action-banner p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .info-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: #f1f3f5;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      color: #495057;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+  </style>
 </head>
 
-<body>
+<body class="starter-page-page">
 
-    <h1>Política de Uso</h1>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <p>Bem-vindo à nossa aplicação! Antes de utilizar nossos serviços, por favor, leia atentamente nossa política de uso para entender como tratamos suas informações.</p>
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="Jhonatan Froeder" class="img-fluid rounded-circle">
+    </div>
 
-    <ol>
-        <li>
-            <strong>Link na Página da Loja e na Própria Aplicação:</strong>
-            <p>Nosso link está disponível na página da loja Play Console e dentro da aplicação para fácil acesso.</p>
-        </li>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Jhonatan Froeder</h1>
+    </a>
 
-        <li>
-            <strong>Referência à Entidade:</strong>
-            <p>Fazemos referência à nossa entidade, Frojho's Soluções Móveis, conforme listado na página da Google Play e na aplicação.</p>
-        </li>
+    <div class="social-links text-center">
+      <a target="_blank" href="https://www.instagram.com/jfroeder/" class="instagram" aria-label="Instagram"><i
+          class="bi bi-instagram"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/jhonatan-froeder-de-oliveira-a405a370" class="linkedin"
+        aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a target="_blank" href="https://github.com/froeder" class="github" aria-label="GitHub"><i
+          class="bi bi-github"></i></a>
+    </div>
 
-        <li>
-            <strong>Rotulagem Clara como Política de Privacidade:</strong>
-            <p>Nossa política é claramente rotulada como "Política de Privacidade" para garantir transparência.</p>
-        </li>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i> Início</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Currículo</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfólio</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Serviços</a></li>
+        <li><a href="privacidade.html" class="active"><i class="bi bi-shield-check navicon"></i> Política de Privacidade</a></li>
+        <li><a href="privadin-exclusao.html"><i class="bi bi-trash3 navicon"></i> Exclusão de Dados</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <li>
-            <strong>Ponto de Contato para Questões de Privacidade:</strong>
-            <p>Oferecemos um ponto de contato para quaisquer dúvidas ou questões relacionadas à privacidade. Entre em contato conosco em <a href="mailto:froeder3@gmail.com">froeder3@gmail.com</a> para obter assistência.</p>
-        </li>
+  <main class="main">
 
-        <li>
-            <strong>Exclusão de Conta e Dados do Usuário (PrivadIn e outros apps):</strong>
-            <p>Para solicitar a exclusão da sua conta e de todos os dados pessoais associados ao aplicativo PrivadIn, acesse a nossa <a href="privadin-exclusao.html"><strong>Página de Exclusão de Conta e Dados do PrivadIn</strong></a> ou entre em contato pelo e-mail <a href="mailto:froeder3@gmail.com">froeder3@gmail.com</a>.</p>
-        </li>
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="mb-1">Política de Privacidade &amp; Termos de Uso</h1>
+          <p class="mb-0 text-white-50" style="font-size: 0.95rem;">
+            Frojho's Soluções Móveis — Compromisso com a transparência, segurança e respeito aos seus dados pessoais.
+          </p>
+        </div>
+        <nav class="breadcrumbs mt-3 mt-lg-0">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li class="current">Política de Privacidade</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
 
-        <li>
-            <strong>Legibilidade em Navegador Padrão:</strong>
-            <p>Nossa política é apresentada de forma legível em um navegador padrão, sem a necessidade de plug-ins ou manipuladores especiais. Não utilizamos PDFs.</p>
-        </li>
+    <!-- Privacy Content Section -->
+    <section class="section">
+      <div class="container" data-aos="fade-up">
 
-        <li>
-            <strong>Disponibilidade em URL Público e Não Geolocalizado:</strong>
-            <p>Nossa política está disponível em uma URL pública, acessível a todos sem restrições geográficas.</p>
-        </li>
+        <!-- Top summary banner -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="policy-card bg-light border-0">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <div>
+                  <span class="privacy-header-badge">
+                    <i class="bi bi-shield-lock-fill"></i> Conformidade LGPD &amp; Google Play
+                  </span>
+                  <h2 class="h4 fw-bold mb-1 text-dark">Política de Privacidade e Proteção de Dados</h2>
+                  <p class="text-muted mb-0">
+                    Aplicável a todos os aplicativos, sistemas e serviços mantidos por <span class="entity-badge">Frojho's Soluções Móveis</span>.
+                  </p>
+                </div>
+                <div class="d-flex flex-column align-items-start align-items-sm-end text-sm-end gap-1">
+                  <span class="info-pill"><i class="bi bi-calendar3"></i> Última Atualização: Outubro de 2024</span>
+                  <span class="info-pill"><i class="bi bi-globe2"></i> Acesso Público e Irrestrito</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <li>
-            <strong>Não Editável:</strong>
-            <p>A política é apresentada de forma não editável para garantir sua integridade.</p>
-        </li>
+        <div class="row gy-4">
 
-        <li>
-            <strong>Divulgação Abrangente de Dados do Usuário:</strong>
-            <ul>
-                <li>Detalhamos os tipos de dados pessoais e sensíveis que a aplicação acessa, coleta, utiliza e compartilha, incluindo as partes com as quais esses dados são compartilhados.</li>
-                <li>Descrevemos nossos procedimentos seguros de manipulação de dados para dados pessoais e sensíveis.</li>
-                <li>Apresentamos nossa política de retenção e exclusão de dados.</li>
-            </ul>
-        </li>
-    </ol>
+          <!-- Table of Contents / Sidebar (Desktop & Mobile) -->
+          <div class="col-lg-4 order-lg-2">
+            <div class="toc-sticky">
+              <div class="toc-card mb-4" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="h6 fw-bold text-uppercase text-dark mb-3 pb-2 border-bottom">
+                  <i class="bi bi-list-nested me-2 text-primary"></i>Sumário de Navegação
+                </h3>
+                <ul class="toc-nav">
+                  <li><a href="#intro"><i class="bi bi-arrow-right-short"></i> 1. Visão Geral e Entidade</a></li>
+                  <li><a href="#link-loja"><i class="bi bi-arrow-right-short"></i> 2. Acesso e Transparência</a></li>
+                  <li><a href="#dados"><i class="bi bi-arrow-right-short"></i> 3. Coleta e Uso de Dados</a></li>
+                  <li><a href="#seguranca"><i class="bi bi-arrow-right-short"></i> 4. Segurança e Armazenamento</a></li>
+                  <li><a href="#compartilhamento"><i class="bi bi-arrow-right-short"></i> 5. Compartilhamento</a></li>
+                  <li><a href="#exclusao"><i class="bi bi-arrow-right-short"></i> 6. Exclusão e Retenção</a></li>
+                  <li><a href="#direitos-lgpd"><i class="bi bi-arrow-right-short"></i> 7. Direitos do Titular (LGPD)</a></li>
+                  <li><a href="#conformidade"><i class="bi bi-arrow-right-short"></i> 8. Padrões Google Play</a></li>
+                  <li><a href="#contato"><i class="bi bi-arrow-right-short"></i> 9. Ponto de Contato</a></li>
+                </ul>
+              </div>
 
-    <p>Ao utilizar nossa aplicação, você concorda com os termos estabelecidos em nossa política de uso. Se tiver alguma dúvida, entre em contato conosco. Agradecemos por escolher nossos serviços!</p>
+              <!-- Quick Exclusão Callout Box -->
+              <div class="action-banner" data-aos="fade-up" data-aos-delay="200">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-trash3 fs-4 text-warning"></i>
+                  <h4 class="h6 mb-0">Exclusão de Conta PrivadIn</h4>
+                </div>
+                <p class="small mb-3">
+                  Precisa excluir sua conta ou dados pessoais cadastrados no aplicativo PrivadIn? Utilize nosso canal oficial direto.
+                </p>
+                <a href="privadin-exclusao.html" class="btn btn-warning btn-sm w-100 fw-bold">
+                  <i class="bi bi-box-arrow-up-right me-1"></i> Central de Exclusão de Dados
+                </a>
+              </div>
+
+              <!-- Support Contact Box -->
+              <div class="p-3 border rounded-3 bg-white mt-3 text-center" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-headset fs-3 text-primary mb-2 d-block"></i>
+                <h5 class="h6 fw-bold mb-1">Dúvidas sobre Privacidade?</h5>
+                <p class="small text-muted mb-2">Nosso canal de atendimento responde em até 48 horas úteis.</p>
+                <a href="mailto:froeder3@gmail.com" class="btn btn-outline-primary btn-sm w-100">
+                  <i class="bi bi-envelope me-1"></i> froeder3@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Policy Content -->
+          <div class="col-lg-8 order-lg-1">
+
+            <!-- Section 1: Introduction -->
+            <div id="intro" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-info-circle-fill"></i></span>
+                <span>1. Visão Geral e Referência à Entidade</span>
+                <span class="badge-num">01</span>
+              </div>
+              <p>
+                Bem-vindo à nossa aplicação! Esta Política de Privacidade descreve como a entidade desenvolvedora <strong>Frojho's Soluções Móveis</strong> (representada pelo desenvolvedor <strong>Jhonatan Froeder</strong>), conforme listada no Google Play Console e nas lojas oficiais de aplicativos, coleta, utiliza, processa, protege e descarta informações de usuários.
+              </p>
+              <div class="highlight-box">
+                <p class="mb-0">
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  <strong>Nosso Compromisso:</strong> Respeitamos integralmente a privacidade do usuário e operamos em estrita observância à Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e às Políticas de Privacidade para Desenvolvedores do Google Play.
+                </p>
+              </div>
+              <p class="mb-0">
+                Ao instalar, acessar ou utilizar qualquer um de nossos aplicativos ou serviços, você declara estar ciente e de acordo com as práticas descritas neste documento.
+              </p>
+            </div>
+
+            <!-- Section 2: Link na Loja e Transparência -->
+            <div id="link-loja" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-shop"></i></span>
+                <span>2. Disponibilidade e Rotulagem Clara</span>
+                <span class="badge-num">02</span>
+              </div>
+              <p>
+                Para assegurar total transparência e fácil consulta pública, garantimos que esta política:
+              </p>
+              <ul class="custom-check-list">
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <strong>Link na Loja de Aplicativos e na Aplicação:</strong> O link para esta página está disponível de forma explícita na listagem da loja (Google Play Store) e diretamente dentro das configurações e menus de cada aplicativo desenvolvido por nós.
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <strong>Rotulagem Clara como Política de Privacidade:</strong> Este documento é denominado expressamente como "Política de Privacidade" e "Termos de Uso", evitando termos ambíguos.
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <strong>Acesso sem barreiras:</strong> Pode ser lido diretamente em qualquer navegador padrão, em qualquer dispositivo (desktop ou mobile), sem a obrigatoriedade de instalação de plug-ins ou download de arquivos em PDF.
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <strong>Disponibilidade Global:</strong> Nossa política reside em URL pública indexada e não geolocalizada (não há bloqueio por país ou região).
+                </li>
+              </ul>
+            </div>
+
+            <!-- Section 3: Divulgação Abrangente de Dados -->
+            <div id="dados" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-database-check"></i></span>
+                <span>3. Divulgação Abrangente de Dados Coletados</span>
+                <span class="badge-num">03</span>
+              </div>
+              <p>
+                Detalhamos de forma clara e objetiva os tipos de dados tratados nas nossas aplicações e as respectivas finalidades:
+              </p>
+              <div class="row gy-3 mt-2">
+                <div class="col-md-6">
+                  <div class="p-3 border rounded-3 bg-light h-100">
+                    <h5 class="h6 fw-bold text-dark mb-2"><i class="bi bi-person-badge text-primary me-2"></i>Dados de Cadastro e Conta</h5>
+                    <p class="small text-muted mb-0">
+                      Nome, endereço de e-mail e credenciais de login informados voluntariamente para autenticação, sincronização de perfil e recuperação de acesso.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 border rounded-3 bg-light h-100">
+                    <h5 class="h6 fw-bold text-dark mb-2"><i class="bi bi-phone text-primary me-2"></i>Informações Técnicas do Dispositivo</h5>
+                    <p class="small text-muted mb-0">
+                      Modelo do dispositivo, versão do sistema operacional e identificadores técnicos necessários para diagnóstico de estabilidade e prevenção de falhas (crash reports).
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 border rounded-3 bg-light h-100">
+                    <h5 class="h6 fw-bold text-dark mb-2"><i class="bi bi-gear-wide-connected text-primary me-2"></i>Permissões Específicas do App</h5>
+                    <p class="small text-muted mb-0">
+                      Permissões solicitadas apenas no momento do uso (ex: câmera ou armazenamento local para seleção de fotos/arquivos), sempre mediante consentimento explícito do usuário.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 border rounded-3 bg-light h-100">
+                    <h5 class="h6 fw-bold text-dark mb-2"><i class="bi bi-activity text-primary me-2"></i>Telemetria e Desempenho</h5>
+                    <p class="small text-muted mb-0">
+                      Estatísticas anônimas de interação e eventos essenciais para aprimoramento contínuo da interface e das funcionalidades das aplicações.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="highlight-box success mt-3">
+                <p class="small mb-0 text-success fw-semibold">
+                  <i class="bi bi-shield-check me-1"></i> Não comercializamos, não alugamos e não vendemos dados pessoais dos nossos usuários para terceiros em nenhuma hipótese.
+                </p>
+              </div>
+            </div>
+
+            <!-- Section 4: Segurança -->
+            <div id="seguranca" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-lock-fill"></i></span>
+                <span>4. Procedimentos Seguros de Manipulação e Armazenamento</span>
+                <span class="badge-num">04</span>
+              </div>
+              <p>
+                Adotamos procedimentos técnicos e administrativos robustos para resguardar a integridade, confidencialidade e disponibilidade dos dados:
+              </p>
+              <ul class="custom-check-list">
+                <li>
+                  <i class="bi bi-shield-check"></i>
+                  <strong>Criptografia em Trânsito e Repouso:</strong> Todas as transmissões entre o dispositivo móvel e os nossos servidores utilizam protocolos criptografados (HTTPS/TLS moderno).
+                </li>
+                <li>
+                  <i class="bi bi-shield-check"></i>
+                  <strong>Controle de Acesso Restrito:</strong> Os dados armazenados são restritos estritamente aos sistemas automatizados necessários à operação do aplicativo.
+                </li>
+                <li>
+                  <i class="bi bi-shield-check"></i>
+                  <strong>Integridade e Não-Editabilidade:</strong> Esta política é apresentada em formato imutável e versionado para resguardar sua autenticidade.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Section 5: Compartilhamento com Terceiros -->
+            <div id="compartilhamento" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-share-fill"></i></span>
+                <span>5. Compartilhamento com Provedores e Terceiros</span>
+                <span class="badge-num">05</span>
+              </div>
+              <p>
+                O compartilhamento de dados ocorre unicamente quando indispensável para a prestação dos serviços do aplicativo, limitado a provedores confiáveis de infraestrutura:
+              </p>
+              <ul class="custom-check-list">
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <strong>Google Play Services / Firebase:</strong> Para serviços de autenticação, entrega de notificações push e monitoramento de falhas do app.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <strong>Obrigações Legais:</strong> Mediante ordem judicial fundamentada ou solicitação formal de autoridade pública competente nos termos da legislação brasileira.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Section 6: Exclusão e Retenção -->
+            <div id="exclusao" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-trash3-fill"></i></span>
+                <span>6. Política de Retenção e Exclusão de Dados</span>
+                <span class="badge-num">06</span>
+              </div>
+              <p>
+                Mantemos os dados pessoais dos usuários apenas pelo tempo estritamente necessário para cumprir as finalidades para as quais foram coletados ou para atendimento a requisitos legais de auditoria.
+              </p>
+              <div class="p-3 border border-warning rounded-3 bg-light mb-3">
+                <h5 class="h6 fw-bold text-dark mb-2">
+                  <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>Direito de Exclusão de Conta (Aplicativo PrivadIn e outros)
+                </h5>
+                <p class="small text-muted mb-2">
+                  Qualquer usuário tem o direito incondicional de solicitar a exclusão definitiva de sua conta cadastrada e de todos os dados associados. Disponibilizamos duas formas facilitadas:
+                </p>
+                <ol class="small text-muted ps-3 mb-3">
+                  <li class="mb-1">Diretamente pelo app: <em>Configurações &gt; Minha Conta &gt; Excluir Conta</em>.</li>
+                  <li class="mb-1">Via página oficial web com formulário guiado e orientações passo a passo.</li>
+                  <li>Via e-mail direto para <a href="mailto:froeder3@gmail.com">froeder3@gmail.com</a> com o assunto "Solicitação de Exclusão de Conta".</li>
+                </ol>
+                <a href="privadin-exclusao.html" class="btn btn-outline-danger btn-sm">
+                  <i class="bi bi-shield-x me-1"></i> Acessar Página de Exclusão de Conta PrivadIn
+                </a>
+              </div>
+            </div>
+
+            <!-- Section 7: Direitos do Titular de Dados (LGPD) -->
+            <div id="direitos-lgpd" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-file-earmark-lock2-fill"></i></span>
+                <span>7. Seus Direitos como Titular (LGPD)</span>
+                <span class="badge-num">07</span>
+              </div>
+              <p>
+                Nos termos do artigo 18 da Lei Geral de Proteção de Dados (LGPD), você pode exercer a qualquer momento os seguintes direitos:
+              </p>
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <div class="p-2 border rounded bg-light small">
+                    <i class="bi bi-check-lg text-primary me-1"></i> Confirmação da existência de tratamento
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 border rounded bg-light small">
+                    <i class="bi bi-check-lg text-primary me-1"></i> Acesso aos dados pessoais tratados
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 border rounded bg-light small">
+                    <i class="bi bi-check-lg text-primary me-1"></i> Correção de dados incompletos ou inexatos
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 border rounded bg-light small">
+                    <i class="bi bi-check-lg text-primary me-1"></i> Eliminação de dados desnecessários ou excessivos
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 border rounded bg-light small">
+                    <i class="bi bi-check-lg text-primary me-1"></i> Portabilidade dos dados a outro fornecedor
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 border rounded bg-light small">
+                    <i class="bi bi-check-lg text-primary me-1"></i> Revogação de consentimento a qualquer momento
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 8: Conformidade Google Play -->
+            <div id="conformidade" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-google-play"></i></span>
+                <span>8. Conformidade com as Políticas do Google Play</span>
+                <span class="badge-num">08</span>
+              </div>
+              <p>
+                Esta página atende rigorosamente a todos os critérios estabelecidos nas políticas de segurança e privacidade do Google Play Console:
+              </p>
+              <ul class="custom-check-list">
+                <li>
+                  <i class="bi bi-check2-all text-success"></i>
+                  <strong>URL Pública e Permanente:</strong> Hospedada em domínio público sem necessidade de autenticação prévia para visualização.
+                </li>
+                <li>
+                  <i class="bi bi-check2-all text-success"></i>
+                  <strong>Identificação Comercial Precisa:</strong> Referencia com precisão o desenvolvedor <strong>Jhonatan Froeder / Frojho's Soluções Móveis</strong>.
+                </li>
+                <li>
+                  <i class="bi bi-check2-all text-success"></i>
+                  <strong>Diretrizes de Segurança dos Dados (Data Safety):</strong> Reflete fidedignamente o formulário de Segurança dos Dados preenchido na loja.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Section 9: Contato e Encarregado -->
+            <div id="contato" class="policy-card" data-aos="fade-up">
+              <div class="policy-card-title">
+                <span class="icon-holder"><i class="bi bi-envelope-paper-fill"></i></span>
+                <span>9. Ponto de Contato para Questões de Privacidade</span>
+                <span class="badge-num">09</span>
+              </div>
+              <p>
+                Para exercer seus direitos de privacidade, tirar dúvidas, sugerir alterações ou tratar de qualquer assunto referente a dados pessoais, entre em contato com nosso responsável:
+              </p>
+
+              <div class="row gy-3 align-items-center mt-1">
+                <div class="col-md-7">
+                  <ul class="list-unstyled mb-0 small text-muted">
+                    <li class="mb-2"><strong class="text-dark">Entidade Desenvolvedora:</strong> Frojho's Soluções Móveis</li>
+                    <li class="mb-2"><strong class="text-dark">Responsável Técnico:</strong> Jhonatan Froeder de Oliveira</li>
+                    <li class="mb-2"><strong class="text-dark">E-mail de Contato:</strong> <a href="mailto:froeder3@gmail.com" class="fw-bold">froeder3@gmail.com</a></li>
+                    <li><strong class="text-dark">Prazo de Resposta:</strong> Até 48 horas úteis</li>
+                  </ul>
+                </div>
+                <div class="col-md-5 text-center text-md-end">
+                  <a href="mailto:froeder3@gmail.com?subject=Quest%C3%A3o%20sobre%20Privacidade%20de%20Dados" class="btn btn-primary btn-sm px-3 py-2">
+                    <i class="bi bi-envelope-fill me-1"></i> Enviar Mensagem por E-mail
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Navigation / Quick links -->
+            <div class="d-flex flex-wrap align-items-center justify-content-between p-3 border rounded-3 bg-white mt-4" data-aos="fade-up">
+              <span class="text-muted small">
+                <i class="bi bi-shield-check text-success me-1"></i> Frojho's Soluções Móveis &bull; Todos os direitos reservados.
+              </span>
+              <div class="d-flex gap-2 mt-2 mt-sm-0">
+                <a href="privadin-exclusao.html" class="btn btn-outline-secondary btn-sm">
+                  <i class="bi bi-trash3 me-1"></i> Exclusão de Dados
+                </a>
+                <a href="index.html" class="btn btn-outline-primary btn-sm">
+                  <i class="bi bi-house me-1"></i> Voltar ao Início
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Privacy Content Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Jhonatan Froeder</strong> <span>Todos os direitos reservados</span></p>
+      </div>
+      <div class="credits text-center">
+        Frojho's Soluções Móveis — Contato: <a href="mailto:froeder3@gmail.com">froeder3@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Voltar ao topo">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
