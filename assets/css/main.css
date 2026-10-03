@@ -1286,3 +1286,51 @@ section,
     width: 50%;
     height: auto;
 }
+
+/*--------------------------------------------------------------
+# App Showcase & Mobile App Details
+--------------------------------------------------------------*/
+.app-screenshot-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 15px 10px;
+}
+
+.app-screenshot-slide img {
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.app-screenshot-slide img:hover {
+  transform: scale(1.02);
+}
+
+.app-icon-header {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.portfolio-info .btn-primary {
+  background-color: var(--accent-color, #149ddd);
+  border-color: var(--accent-color, #149ddd);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.portfolio-info .btn-primary:hover {
+  background-color: #0d79af;
+  border-color: #0d79af;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(20, 157, 221, 0.35);
+}
